@@ -1,0 +1,279 @@
+#!/bin/bash
+#greatest of three number
+echo enter three number
+read a b c
+
+if [ $a -gt $b -a $a -gt $c ]
+then 
+	echo $a is greatest
+	
+elif [ $b -gt $a -a $b -gt $c ]
+then
+
+	echo $b is greatest
+else
+    echo $c is greatest
+	
+fi
+**********************************************************************************
+#!/bin/bash
+#greatest of two number
+echo enter two number
+read a b
+
+if [ $a -gt $b ]
+then
+        echo $a is greatest
+
+elif [ $b -gt $a ]
+then
+
+        echo $b is greatest
+
+fi
+***************************************************************************************
+#!/bin/bash
+#swap of two number
+
+echo enter two number
+read a
+read b
+
+echo "before swap, a=$a and b=$b"
+c=$a
+a=$b
+b=$c
+
+echo "after swap, a=$a and b=$b"
+*******************************************************************************************
+variable = pointer to your actual data
+
+local variable =limited to that specific script we cant call from outside the script
+env variable = we can call that variable from outside the script 
+*****************************************#########################################################
+
+#!/bin/bash
+#addition two number                      #multiplication \*
+a=10                                      #dividation   /
+b=20 
+value=`expr $a + $b`
+
+echo the addition is $value
+**********************************************************************************************************************************
+read a
+read b
+
+
+if [ $a == $b ]
+then
+        echo a equal to b
+else
+        echo a is not equal b
+fi
+
+*************************************************************************************************************
+#!/bin/bash
+#for loop examaple
+
+for var in 1 2 3 4 5 
+do 
+		echo "Loop number :$var"
+done
+****************************************************************************************************************
+
+#!/bin/bash
+#for loop examaple
+
+for var in mon tue wed thu fri sat sun
+do 
+		echo "Loop number :$var"
+done
+
+
+****************************************************************************************************
+#!/bin/bash
+#for loop examaple
+
+for var in {1..100}
+do
+        echo "Loop number :$var"
+done
+~
+output = 1 to 100 print
+*********************************************************************
+#!/bin/bash
+#for loop examaple
+
+for var in {1..100..10}                                           10 cha gap ni print hoil
+do
+        echo "Loop number :$var"
+done
+
+
+**output** =Loop number :1
+Loop number :11
+Loop number :21
+Loop number :31
+Loop number :41
+Loop number :51
+Loop number :61
+Loop number :71
+Loop number :81
+Loop number :91
+********************************************************************************************************************
+#!/bin/bash
+#for loop examaple
+
+for ((i=1;i<101;i++))
+
+do
+        echo "Loop number :$i"
+done
+
+
+#output#
+Loop number :1
+Loop number :2
+Loop number :3
+Loop number :4
+Loop number :5
+Loop number :6
+Loop number :7
+Loop number :8
+Loop number :9
+Loop number :10
+Loop number :11
+Loop number :12
+Loop number :13
+Loop number :14
+Loop number :15
+Loop number :16
+Loop number :17
+Loop number :18
+Loop number :19
+Loop number :20
+Loop number :21
+Loop number :22
+Loop number :23
+Loop number :24
+Loop number :25
+Loop number :26
+Loop number :27
+Loop number :28
+Loop number :29
+Loop number :30
+Loop number :31
+Loop number :32
+Loop number :33
+Loop number :34
+Loop number :35
+Loop number :36
+Loop number :37
+Loop number :38
+Loop number :39
+Loop number :40
+Loop number :41
+Loop number :42
+Loop number :43
+Loop number :44
+Loop number :45
+Loop number :46
+Loop number :47
+Loop number :48
+Loop number :49
+Loop number :50
+Loop number :51
+Loop number :52
+Loop number :53
+Loop number :54
+Loop number :55
+Loop number :56
+Loop number :57
+Loop number :58
+Loop number :59
+Loop number :60
+Loop number :61
+Loop number :62
+Loop number :63
+Loop number :64
+Loop number :65
+Loop number :66
+Loop number :67
+Loop number :68
+Loop number :69
+Loop number :70
+Loop number :71
+Loop number :72
+Loop number :73
+Loop number :74
+Loop number :75
+Loop number :76
+Loop number :77
+Loop number :78
+Loop number :79
+Loop number :80
+Loop number :81
+Loop number :82
+Loop number :83
+Loop number :84
+Loop number :85
+Loop number :86
+Loop number :87
+Loop number :88
+Loop number :89
+Loop number :90
+Loop number :91
+Loop number :92
+Loop number :93
+Loop number :94
+Loop number :95
+Loop number :96
+Loop number :97
+Loop number :98
+Loop number :99
+Loop number :100
+********************************************************************************************
+
+#while loop example
+
+a=0
+while [ $a -lt 10 ]                                     ........or (( $a<10 ))
+do                                                    whenever the condition is true then loop will excute
+  echo "loop no: $a"
+  a=`expr $a + 1`
+done
+#output#
+loop no: 0
+loop no: 1
+loop no: 2
+loop no: 3
+loop no: 4
+loop no: 5
+loop no: 6
+loop no: 7
+loop no: 8
+loop no: 9
+************************************************************************************************************
+  
+#until loop example                                          jab tak $a ki value 10 se badi nahi hoti tab tak loop chalega
+                                                              condition true hogayi to woh bahar ajyega ....loop close hoil
+  a=0
+until [ $a -gt 10 ]                                     ........or (( $a>10 ))
+do                                                     until the statement is true loop will get execute
+  echo "loop no: $a"
+  a=`expr $a + 1`
+done
+
+#output#
+loop no: 0
+loop no: 1
+loop no: 2
+loop no: 3
+loop no: 4
+loop no: 5
+loop no: 6
+loop no: 7
+loop no: 8
+loop no: 9
+loop no: 10
+********************************************************************************************************
